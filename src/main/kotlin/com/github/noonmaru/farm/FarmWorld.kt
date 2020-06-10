@@ -14,5 +14,5 @@ interface FarmWorld { // FarmWorld ==> 서버 월드들을 해당 플러그인�
 
 val World.farmWorld: FarmWorld // World.farmWorld 변수 생성; org.bukkit.World 클래스 안의 변수; 다른 절차 없이 World 클래스를 이용해 호출 할 수 있음
     get() { // World.farmWorld를 불러올 때
-        return Farm.manager.getWorld(this) // Farm 오브젝트(FarmManager 클래스의 하위 클래스라고 해석하면 편함)의 manager를 통해 FarmManager.getWorld()를 호출 및 반환
+        return Farm.manager.getWorld(this) // Farm 오브젝트의 manager를 통해 FarmManager.getWorld()를 호출 및 반환
     }
